@@ -18,7 +18,7 @@ public class CategoryRestController {
   @Autowired
   private ICategoryService service;
 
-  @GetMapping("/categories")
+  @GetMapping("/category")
   public ResponseEntity<CategoryResponseRest> search() {
     return service.search();
   }
